@@ -42,7 +42,7 @@ export const Post: FC<PostType> = () => {
     return <div>一覧記事取得エラー: {error.message}</div>;
   }
 
-  if ((!loading && post === null) || post === undefined) {
+  if (!loading || !post) {
     return <div>記事が存在しません</div>;
   }
 
