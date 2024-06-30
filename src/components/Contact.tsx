@@ -8,9 +8,9 @@ import { TextInput } from "./TextInput";
 
 export const Contact = () => {
   // ユーザー入力値を保存・表示
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const clearHandler = () => {
     setName("");
@@ -19,9 +19,9 @@ export const Contact = () => {
   };
 
   // エラーメッセージを保存・表示
-  const [nameErr, setNameErr] = useState<string>("");
-  const [emailErr, setEmailErr] = useState<string>("");
-  const [messageErr, setMessageErr] = useState<string>("");
+  const [nameErr, setNameErr] = useState("");
+  const [emailErr, setEmailErr] = useState("");
+  const [messageErr, setMessageErr] = useState("");
 
   const validate = (): boolean => {
     // エラー判定用

@@ -1,5 +1,12 @@
-import type { TextAreaProps } from "../types/TextAreaProps";
+import { FC } from "react";
 
-export const TextArea = ({ id, value, onChange, rows }: TextAreaProps) => {
+type TextAreaProps = {
+  id: string;
+  value: string;
+  onChange: (value: string) => void;
+  rows: number;
+};
+
+export const TextArea: FC<TextAreaProps> = ({ id, value, onChange, rows }) => {
   return <textarea id={id} value={value} onChange={(e) => onChange(e.target.value)} rows={rows} />;
 };

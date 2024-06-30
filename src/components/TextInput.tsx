@@ -1,5 +1,12 @@
-import type { TextInputProps } from "../types/TextInputProps";
+import { FC } from "react";
 
-export const TextInput = ({ id, type, value, onChange }: TextInputProps) => {
+type TextInputProps = {
+  id: string;
+  type: string;
+  value: string;
+  onChange: (value: string) => void;
+};
+
+export const TextInput: FC<TextInputProps> = ({ id, type, value, onChange }) => {
   return <input id={id} type={type} value={value} onChange={(e) => onChange(e.target.value)} />;
 };

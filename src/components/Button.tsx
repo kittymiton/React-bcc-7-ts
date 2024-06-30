@@ -1,5 +1,12 @@
-import type { ButtonProps } from "../types/ButtonProps";
-export const Button = ({ type, tag, onClick }: ButtonProps) => {
+import { FC } from "react";
+
+type ButtonProps = {
+  type: React.ButtonHTMLAttributes<HTMLButtonElement>["type"];
+  tag: string;
+  onClick?: (value: string) => void;
+};
+
+export const Button: FC<ButtonProps> = ({ type, tag, onClick }) => {
   return (
     <button
       type={type}
