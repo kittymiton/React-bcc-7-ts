@@ -1,9 +1,9 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../constants";
 import type { PostType } from "../types/PostType";
 
-export const Posts: FC<PostType> = () => {
+export const Posts = () => {
   // 初期値[空配列]設定でpostsがundefindでmapメソッドのエラー回避
   const [posts, setPosts] = useState<PostType[]>([]);
 

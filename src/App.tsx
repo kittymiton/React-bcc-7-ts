@@ -1,9 +1,9 @@
-import { Posts } from "./components/Posts";
+import { Route, Routes } from "react-router-dom";
 import { Contact } from "./components/Contact";
-import { Post } from "./components/Post";
 import { Header } from "./components/Header";
 import { NoMatch } from "./components/NoMatch";
-import { Routes, Route } from "react-router-dom";
+import { Post } from "./components/Post";
+import { Posts } from "./components/Posts";
 
 export const App = () => {
   return (

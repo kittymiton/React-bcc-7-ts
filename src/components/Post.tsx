@@ -1,9 +1,9 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { API_BASE_URL } from "../constants";
 import type { PostType } from "../types/PostType";
 
-export const Post: FC<PostType> = () => {
+export const Post = () => {
   // react-routerのuseParamsで動的URLのパラメータ取得
   const { id } = useParams();
 
